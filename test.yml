@@ -1,11 +1,12 @@
----
-- name: Shell module example
-  hosts: example
-  tasks:
-  
-- name: This command will change the working directory to somedir/.
-  shell:
-    cmd: hostname
-    
-  - debug:
-    	msg: "{{os_info.stdout_lines}}"
+--- 
+- 
+  hosts: ejemplo
+  name: "Shell module example"
+  tasks: 
+    - 
+      name: "Check system information"
+      register: os_info
+      shell: "lsb_release -a"
+    - 
+      debug: 
+        msg: "{{os_info.stdout_lines}}"
