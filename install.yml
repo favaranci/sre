@@ -2,8 +2,8 @@
 - 
   become: true
   hosts: ejemplo
-  name: "ensure wget is installed"
+  name: "instalacion de telnet"
   yum: 
-    name: wget
+    name: telnet
     state: present
     update_cache: true
