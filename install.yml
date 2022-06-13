@@ -1,8 +1,8 @@
-
-become: true
-  hosts: ejemplo
-  name: "instalacion de telnet"
-  yum: 
-    name: telnet
-    state: present
-    update_cache: true
+---
+- hosts: ejemplo
+  tasks:
+  - name: Package installation
+    yum:
+      name:
+        - sysstat
+      state: latest
