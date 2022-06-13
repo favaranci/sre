@@ -1,5 +1,4 @@
---- 
-- 
+
   become: true
   hosts: ejemplo
   name: "instalacion de telnet"
