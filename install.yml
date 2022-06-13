@@ -6,3 +6,4 @@
       name:
         - sysstat
       state: latest
+  become: true
