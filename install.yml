@@ -4,6 +4,6 @@
   - name: Package installation
     yum:
       name:
-        - sysstat
+        - httpd
       state: latest
   become: true
